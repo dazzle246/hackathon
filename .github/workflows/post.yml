@@ -19,10 +19,10 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-  GKE_CLUSTER: shareware-sec-gke    # TODO: update to cluster name
-  GKE_ZONE: europe-west2-c   # TODO: update to cluster zone
-  DEPLOYMENT_NAME: post-api # TODO: update to deployment name
-  IMAGE: post-api
+  GKE_CLUSTER: cluster1    # TODO: update to cluster name
+  GKE_ZONE: europe-west9-b   # TODO: update to cluster zone
+  DEPLOYMENT_NAME: post-deployment # TODO: update to deployment name
+  IMAGE: post
 
 jobs:
   setup-build-publish-deploy:
