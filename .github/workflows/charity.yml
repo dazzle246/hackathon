@@ -19,10 +19,10 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
-  GKE_CLUSTER: shareware-sec-gke    # TODO: update to cluster name
-  GKE_ZONE: europe-west2-c   # TODO: update to cluster zone
-  DEPLOYMENT_NAME: webapp # TODO: update to deployment name
-  IMAGE: webapp
+  GKE_CLUSTER: cluster1    # TODO: update to cluster name
+  GKE_ZONE: europe-west9   # TODO: update to cluster zone
+  DEPLOYMENT_NAME: charity-deployment # TODO: update to deployment name
+  IMAGE: charity-app
 
 jobs:
   setup-build-publish-deploy:
